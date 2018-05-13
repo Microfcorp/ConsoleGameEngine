@@ -1,0 +1,21 @@
+sett;razm:false,title:Music,autoelse:true,color:0
+cls;
+mess;Добро пожаловать в игру "Угадай песню по словам"
+mess;Вам престоит угадывать
+mess;
+mess;Эти облака. Фиолетовая вата
+if;розовое вино,else;2
+розовое вино:mess;Наркоманы, вперёд
+else:closegame;Не верно
+mess;
+mess;la louze
+if;la louze,else;2
+la louze:mess;Название - песня
+else:closegame;Не верно
+mess;
+mess;.NET или Java
+if;gапа может в си,else;1
+gапа может в си:mess;C C C C C
+else:closegame;Не верно
+mess;
+finish;Поздравляем! Вы прошли игру
