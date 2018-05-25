@@ -1,11 +1,12 @@
 sett;razm:false,title:Music,autoelse:true,color:0
 cls;
+include;getcurrentdirect:Musicinc.gam
 mess;Добро пожаловать в игру "Угадай песню по словам"
 mess;Вам престоит угадывать
 mess;
 mess;Эти облака. Фиолетовая вата
 if;розовое вино,else;2
-розовое вино:mess;Наркоманы, вперёд
+розовое вино:ascllart;getcurrentdirect:art1.art,1-34
 else:closegame;Не верно
 mess;
 mess;la louze
@@ -18,4 +19,3 @@ if;gапа может в си,else;1
 gапа может в си:mess;C C C C C
 else:closegame;Не верно
 mess;
-finish;Поздравляем! Вы прошли игру
