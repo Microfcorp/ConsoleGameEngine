@@ -1,24 +1,10 @@
 sett;razm:false,title:Game1,autoelse:true,color:0
 cls;
+//cashe;91.202.27.167/games;art1.art
 mess;Добро пожаловать в игру "угадалки". Вам предстоит угадывать слова
 mess;Правила: Вы угадываете слова по многим правилам. Если не угадали, игра закроется через 1,5 секунды
-mess; 
-mess;                        m
-mess;    $m                mm            m
-mess;     "$mmmmm        m$"    mmmmmmm$"
-mess;           """$m   m$    m$""""""
-mess;         mmmmmmm$$$$$$$$$"mmmm
-mess;   mmm$$$$$$$$$$$$$$$$$$ m$$$$m  "    m  "
-mess; $$$$$$$$$$$$$$$$$$$$$$  $$$$$$"$$$
-mess;  mmmmmmmmmmmmmmmmmmmmm  $$$$$$$$$$
-mess;  $$$$$$$$$$$$$$$$$$$$$  $$$$$$$"""  m
-mess;  "$$$$$$$$$$$$$$$$$$$$$ $$$$$$  "      "
-mess;      """""""$$$$$$$$$$$m """"
-mess;        mmmmmmmm"  m$   "$mmmmm
-mess;      $$""""""      "$     """"""$$
-mess;    m$"               "m           "
-mess;                        "
-mess; 
+ascllart;getcurrentdirect:art1.art,76-80 
+ascllart;getcurrentdirect:art1.art,82-96 
 mess; 
 mess;Вы повернёте налево или направо?
 if;налево,направо,else;2

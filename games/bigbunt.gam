@@ -1,10 +1,13 @@
 sett;razm:false,title:BigBunt,autoelse:true,color:0
 cls;
+//cashe;91.202.27.167/games;Бармалей.jpg,art1.art
 printimg;getcurrentdirect:Бармалей.jpg
 mess;Добро пожаловать в игру BigBunt
 mess;вы должны поднять бунт или сдохнуть))
 mess;Ну...
 mess;начали...
+mess;Если что, то он за тобой придёт
+ascllart;getcurrentdirect:art1.art,36-74
 mess;
 mess;Вам хватит 100000000000000000000000000000000000000000000000000000000000000000000000000 жалких душ для бунта
 if;да,нет,else;2

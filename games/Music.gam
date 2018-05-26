@@ -1,6 +1,6 @@
 sett;razm:false,title:Music,autoelse:true,color:0
 cls;
-include;getcurrentdirect:Musicinc.gam
+//cashe;91.202.27.167/games;Musicinc.gam,art1.art
 mess;Добро пожаловать в игру "Угадай песню по словам"
 mess;Вам престоит угадывать
 mess;
@@ -9,11 +9,7 @@ if;розовое вино,else;2
 розовое вино:ascllart;getcurrentdirect:art1.art,1-34
 else:closegame;Не верно
 mess;
-mess;la louze
-if;la louze,else;2
-la louze:mess;Название - песня
-else:closegame;Не верно
-mess;
+include;getcurrentdirect:Musicinc.gam
 mess;.NET или Java
 if;gапа может в си,else;1
 gапа может в си:mess;C C C C C
