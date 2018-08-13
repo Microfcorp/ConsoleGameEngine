@@ -1,6 +1,8 @@
 # ConsoleGameEngine
 Консольный движок для текстовый игр 
 
+Исходные коды https://github.com/Microfcorp/GameEngineSource
+
 Игры должны храниться в папке games и иметь расширение *.gam
 Также можно открывать игры через "Открыть с помощью" и выбирать там game.exe
 
