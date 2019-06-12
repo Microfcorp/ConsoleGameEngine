@@ -1,0 +1,20 @@
+sett;razm:false,title:Quest,autoelse:false,color:2
+cls;
+including;getcurrentdirect:QuestLang.gaminc
+mess;Идёт загрузка...;50
+func;QuestInit
+module;qm;LoadFromFile:File=getcurrentdirect:\Симулятор Алхимика.qbin
+mess;Загрузка завершена
+mess;
+pause;Нажмите любую кнопку для старта
+
+func;QuestStart
+func;SteepQuestReadPrintMess
+pause;Игра окончена. Спасибо большое за её тест. Надеемся, что вам понравилось, можете дописать сюжетную линию
+close;
+
+including;getcurrentdirect:QuestModule.gaminc
+function;QuestStop{
+	isfunction;
+	mess;Сюжетная линия окончена
+}
