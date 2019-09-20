@@ -3,18 +3,20 @@ cls;
 including;getcurrentdirect:QuestLang.gaminc
 mess;Идёт загрузка...;50
 func;QuestInit
-module;qm;LoadFromFile:File=getcurrentdirect:\Симулятор Алхимика.qbin
+
+module;qm;LoadFromFile:File=getcurrentdirect:\Ужас ночи.qbin
 mess;Загрузка завершена
 mess;
 pause;Нажмите любую кнопку для старта
-
 func;QuestStart
-func;SteepQuestReadPrintMess
-pause;Игра окончена. Спасибо большое за её тест. Надеемся, что вам понравилось, можете дописать сюжетную линию
+
+Logical;ifs;$QuestRequest;!=;Zero;SteepQuestReadPrintMess
+
+pause;Игра окончена. Спасибо большое за её тест
 close;
 
 including;getcurrentdirect:QuestModule.gaminc
-function;QuestStop{
+function;QuestStop;NoRepet{
 	isfunction;
 	mess;Сюжетная линия окончена
 }

@@ -21,10 +21,12 @@ function;SteepQuest{##Перейти на квест по переменной
 function;SteepQuestRead{##Войти в цикл до завершению сюжетной линии
 	isfunction;
 	read;Ваш выбор:;SteepSet
+	Logical;ifs;$SteepSet;==;;SteepQuestReadPrintMessNoRead
 	module;qm;GetSteep:Steep=$SteepSet
 	mess;$QuestRequestSteep
 	Logical;ifs;$QuestRequest;==;Zero;QuestStop
-	Logical;ifs;$QuestRequest;!=;Zero;SteepQuestRead
+	##Logical;ifs;$QuestRequest;!=;Zero;SteepQuestRead
+	repet;
 }
 
 function;SteepQuestReadPrintMess{##Войти в цикл до завершению сюжетной линии с использованием printmess
@@ -34,15 +36,12 @@ function;SteepQuestReadPrintMess{##Войти в цикл до завершен�
 	module;qm;GetSteep:Steep=$SteepSet
 	printmess;$QuestRequestSteep;60
 	Logical;ifs;$QuestRequest;==;Zero;QuestStop
-	Logical;ifs;$QuestRequest;!=;Zero;SteepQuestReadPrintMess
+	##Logical;ifs;$QuestRequest;!=;Zero;SteepQuestReadPrintMess
+	repet;
 }
 
-function;SteepQuestReadPrintMessNoRead{##Войти в цикл до завершению сюжетной линии с использованием printmess
+function;SteepQuestReadPrintMessNoRead{##Перезапросить от пользователя
 	isfunction;
-	read;;SteepSet
-	Logical;ifs;$SteepSet;==;;SteepQuestReadPrintMessNoRead
-	module;qm;GetSteep:Steep=$SteepSet
-	printmess;$QuestRequestSteep;60
-	Logical;ifs;$QuestRequest;==;Zero;QuestStop
-	Logical;ifs;$QuestRequest;!=;Zero;SteepQuestReadPrintMess
+	read;Ваш выбор;SteepSet
+	repet;
 }
