@@ -83,6 +83,8 @@ encryptogam;getcurrentdirect:cryptoinc.gam.cyt;getcurrentdirect:cryptoinc.gam ##
 
 func;PrintText ##Вызов функции PrintText
 
+repet; ##Повторить вызов текущей функции
+
 Applications;Resize;500;600 ##Класс Applications, вызов функции изменения размера буфера консоли
 Applications;Start;programm.exe;atribut ##Класс Applications, запуск приложения с атрибутами
 
